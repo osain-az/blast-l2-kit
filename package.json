@@ -1,7 +1,7 @@
 {
   "name": "blast-l2-kit",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.3.0",
   "description": "Starter kit for building smart contracts on Blast L2. Includes Blast interfaces and example code.",
   "files": [
     "src/**/*.sol"
@@ -13,7 +13,7 @@
 
    "scripts": {
     "build": "forge build",
-    "test_testnet_forge": "forge test --fork-url https://sepolia.blast.io  -vvv",
-    "test_testnet": "forge test --fork-url https://sepolia.blast.io  -vvv"
+    "forge-test": "forge test --fork-url https://sepolia.blast.io  -vvv",
+    "forge-testnet": "forge test --fork-url https://sepolia.blast.io  -vvv"
   }
 }
