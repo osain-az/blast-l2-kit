@@ -9,5 +9,11 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newblastcity/blast-l2-kit.git"
+  },
+
+   "scripts": {
+    "build": "forge build",
+    "test_testnet_forge": "forge test --fork-url https://sepolia.blast.io  -vvv",
+    "test_testnet": "forge test --fork-url https://sepolia.blast.io  -vvv"
   }
 }
