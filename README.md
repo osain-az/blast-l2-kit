@@ -41,9 +41,20 @@ Within this repo is also a collection of scripts to check and distribute Blast P
 After installing foundry you can run custom command using `npm` commands
 
 ```sh
-npm run forge-test  #run a forge  test
+npm run forge-test  #run a forge  test  fo all your test 
 ```
+
+```sh
+npm run deploy-test  #deploy the test example(WETHRebasing.sol)  contract to blast sepolia testnet 
+```
+
 Or check forge command  [FORGE README](src/examples/foundry/README.md)
+
+### Environment Variables
+
+For script that needs Private key like deploying or paying of gas added an .env file.
+
+To deploy the WETHRebasing.sol example  you will need  `PRIVATE_KEY`  and wallet `OWNER`. see .env.example file
 
 ## Blast Addresses
 

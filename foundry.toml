@@ -7,7 +7,7 @@ remappings = [
     # "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
     # "ds-test/=lib/openzeppelin-contracts-upgradeable/lib/forge-std/lib/ds-test/src/",
     # "erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
-     "forge-std/=lib/forge-std/src",
+     "forge-std/=lib/forge-std/src/",
     # "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
     # "openzeppelin-contracts/=lib/openzeppelin-contracts/",
 ]
@@ -20,16 +20,15 @@ optimizer_runs = 200
 line_length = 100
 tab_width = 2
 bracket_spacing = true
-sender = '0x1804c8AB1F12E6bbf3894d4083f33e07309d1f38'
+#sender = ''
 
-# [rpc_endpoints]
-# optimism = "https://optimism.alchemyapi.io/v2/1234567"
-# mainnet = "${RPC_MAINNET}"
-# goerli = "https://eth-goerli.alchemyapi.io/v2/${GOERLI_API_KEY}"
+ [rpc_endpoints]
 
-# [etherscan]
+blast_sepolia = "${BLAST_MAINNET_RPC_URL}"
+
+[etherscan]
 # mainnet = { key = "${ETHERSCAN_MAINNET_KEY}" }
-# mainnet2 = { key = "ABCDEFG", chain = "mainnet" }
+# sepo = { key = "ABCDEFG", chain = "mainnet" }
 # optimism = { key = "1234576", chain = 42 }
 # unknownchain = { key = "ABCDEFG", url = "https://<etherscan-api-url-for-that-chain>" }
 

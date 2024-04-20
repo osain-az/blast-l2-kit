@@ -10,10 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/newblastcity/blast-l2-kit.git"
   },
-
-   "scripts": {
+  "scripts": {
     "build": "forge build",
     "forge-test": "forge test --fork-url https://sepolia.blast.io  -vvv",
-    "forge-testnet": "forge test --fork-url https://sepolia.blast.io  -vvv"
+    "deploy-test": "forge script  script/WETHRebasing.s.sol:DeployBlast --rpc-url https://sepolia.blast.io  --broadcast -vvv"
   }
 }
